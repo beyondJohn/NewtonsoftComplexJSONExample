@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Text;
 
-namespace SwitchMagicCore.Controllers
+namespace MyDotNetCoreProject.Controllers
 {
     [Produces("application/json")]
     [Route("api/Location")]
@@ -19,7 +19,6 @@ namespace SwitchMagicCore.Controllers
             string lng = latlng.lng;
             var file = System.IO.Path.GetFullPath("../Data/Location/location.txt");
             string allText = System.IO.File.ReadAllText(file);
-            allText = allText.Replace("\\", "");
 
             var jsonObj = JObject.Parse(allText);
 
