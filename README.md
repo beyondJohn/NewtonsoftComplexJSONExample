@@ -5,6 +5,7 @@
 - CORS reference exists in code but should be deleted if CORS is not being used
 ## The code will produce the following JSON object
 {"location":{"1":{"lat":"67678967","lng":"s9907897"},"2":{"lat":"67895645","lng":"0989435"},"3":{"lat":"3245","lng":"79763"},"4":{"lat":"3245","lng":"79763"}}}
+- The JSON object is stored in the location.txt file referred to in the beginning of the code example
 - The code was developed to store GPS coordinates
 - You may notice that the Latitude and Longitude values are not real values and only provided for testing purposes
 
